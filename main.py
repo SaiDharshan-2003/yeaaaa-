@@ -1,7 +1,7 @@
 floor = 4
 initial = 0
-x=1
-while x<=2:
+x=int(input('enter 1 to start the lift\n enter 2 to stop the lift '))
+while x<2:
     destination = int(input("enter destination floor"))
     if destination <= floor:
         if destination == initial:
@@ -17,8 +17,10 @@ while x<=2:
             print(initial+1)
             initial+=1
         else:
-            pass
+           pass
 
 
     else:
         print("invalid floor")
+else:
+    print('the lift has been stopped')
